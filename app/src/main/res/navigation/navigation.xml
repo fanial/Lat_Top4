@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentSatu">
+
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.f4l.lat_top4.FragmentSatu"
+        android:label="fragment_satu"
+        tools:layout="@layout/fragment_satu" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentEmpat"
+            app:destination="@id/fragmentEmpat" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentEnam"
+            app:destination="@id/fragmentEnam" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentLima"
+            app:destination="@id/fragmentLima" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentEnam2"
+            app:destination="@id/fragmentEnam" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentTiga2"
+            app:destination="@id/fragmentTiga" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="fanial" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.f4l.lat_top4.FragmentDua"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" >
+        <argument
+            android:name="username_umur"
+            app:argType="string"
+            android:defaultValue="fanial" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentUmur"
+            app:destination="@id/fragmentUmur" />
+        <argument
+            android:name="umur"
+            app:argType="string" />
+        <argument
+            android:name="username_profile"
+            android:defaultValue="fanial"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.f4l.lat_top4.FragmentTiga"
+        android:label="fragment_tiga"
+        tools:layout="@layout/fragment_tiga" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEmpat"
+        android:name="com.f4l.lat_top4.FragmentEmpat"
+        android:label="fragment_empat"
+        tools:layout="@layout/fragment_empat" >
+        <action
+            android:id="@+id/action_fragmentEmpat_to_fragmentEnam"
+            app:destination="@id/fragmentEnam" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEnam"
+        android:name="com.f4l.lat_top4.FragmentEnam"
+        android:label="fragment_enam"
+        tools:layout="@layout/fragment_enam" />
+    <fragment
+        android:id="@+id/fragmentLima"
+        android:name="com.f4l.lat_top4.FragmentLima"
+        android:label="fragment_lima"
+        tools:layout="@layout/fragment_lima" />
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.f4l.lat_top4.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUmur"
+        android:name="com.f4l.lat_top4.FragmentUmur"
+        android:label="fragment_umur"
+        tools:layout="@layout/fragment_umur" />
+</navigation>
